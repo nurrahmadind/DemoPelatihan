@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205173394}
   - component: {fileID: 205173393}
-  - component: {fileID: 205173392}
+  - component: {fileID: 205173395}
   m_Layer: 0
   m_Name: 2_of_clubs_0
   m_TagString: Untagged
@@ -137,18 +137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &205173392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 205173391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4588c4802ec1b44196588b8a2c9fe06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &205173393
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -219,6 +207,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.029}
+--- !u!114 &205173395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205173391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384c7f0c43a5a9e41bd8a908129f649a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListPlayer:
+  - Name: DINDA
+    Level: 17
+    Health: 1000
+  - Name: NURRAHMA
+    Level: 14
+    Health: 3000
+  - Name: ASYAM
+    Level: 20
+    Health: 3000
+  - Name: ASKHA
+    Level: 10
+    Health: 1500
 --- !u!1 &759364345
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +386,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1734629102
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -453,9 +466,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1734629100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92b2036f687866a4da657e4c24cd2791, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c69118dc565b4d459d261a734db044a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player:
+    Name: saya
+    Level: 1
+    Health: 100
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
