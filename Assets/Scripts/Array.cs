@@ -16,6 +16,6 @@ public class ContohArray : MonoBehaviour
         Debug.Log(ArrayNama[1]); //Output: Siapa Kamu
 
         //menampilkan panjang array
-        Debug.Log(ArrayNama[Length]); 
+        Debug.Log(ArrayNama.Length); 
     }
 }
