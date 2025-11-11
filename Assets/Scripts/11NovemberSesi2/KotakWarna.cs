@@ -6,12 +6,12 @@ public class KotakWarna : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // _spriteRenderer = GetComponent<SpriteRenderer>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // Color warna;
+        Color warna;
 
-        // ColorUtility.TryParseHtmlString("#000000", out Color warnaHitam); //kalau mau pake hex code
-        // _spriteRenderer.color = Color.black;
+        ColorUtility.TryParseHtmlString("#000000", out Color warnaHitam); //kalau mau pake hex code
+        _spriteRenderer.color = Color.black;
     }
 
     // Update is called once per frame
