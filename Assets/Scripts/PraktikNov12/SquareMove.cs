@@ -3,7 +3,9 @@ using UnityEngine;
 public class SquareMove : MonoBehaviour
 {
 
-    public ArahGerak arahGerak = ArahGerak.kanan;// Start is called once before the first execution of Update after the MonoBehaviour is created
+    public ArahGerak arahGerak = ArahGerak.kanan;
+
+    public Interaksi12 interaksi12;// Start is called once before the first execution of Update after the MonoBehaviour is created
     
     public float kecepatan = 5.0f;
     void Start()
@@ -49,11 +51,17 @@ public class SquareMove : MonoBehaviour
             {
                 arahGerak = ArahGerak.kiri;
             }
-            else 
+            else
             {
                 arahGerak = ArahGerak.kanan;
             }
+            interaksi12.skor++;
+            TambahSkor();
         }
+    }
+    public void TambahSkor()
+    {
+        interaksi12.teksSkor.text = "Skor:" + interaksi12.skor.ToString();
     }
 }
 

@@ -1,8 +1,11 @@
 using UnityEngine;
-
+using TMPro;
 public class Interaksi12 : MonoBehaviour
 {
-    public SquareMove squareMove;// Start is called once before the first execution of Update after the MonoBehaviour is created
+    public SquareMove squareMove; //kalo pak em SquareMove12B
+    public int skor;
+    public TMP_Text teksSkor;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
