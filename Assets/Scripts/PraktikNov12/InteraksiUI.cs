@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InteraksiUI : MonoBehaviour
 {
+    public SquareMove12 squareMove12;
     public GameObject SquareUbahWarna;
     public TMP_Text KataBerubah;
 
@@ -16,7 +17,7 @@ public class InteraksiUI : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -39,7 +40,7 @@ public class InteraksiUI : MonoBehaviour
 
     public void LanjutNama()
     {
-        if (idNama < daftarNama.Count-1)
+        if (idNama < daftarNama.Count - 1)
         {
             idNama++;
         }
@@ -49,7 +50,7 @@ public class InteraksiUI : MonoBehaviour
         }
         NamaBerubah.text = daftarNama[idNama];
     }
-    
+
     public void KembaliNama()
     {
         if (idNama <= 0)
@@ -83,7 +84,24 @@ public class InteraksiUI : MonoBehaviour
     }
     public void UbahWarnaAcak()
     {
-        Color col = new Color (Random.Range(0.0f,1.0f), Random.Range(0.0f,1.0f), Random.Range(0.0f,1.0f));
+        Color col = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
         UbahWarna(col);
     }
+    public void Mulai()
+    {
+        squareMove12.isMove = true;
+    }
+    public void Berhenti()
+    {
+        squareMove12.isMove = false;
+    }
+    public void GerakKanan()
+    {
+        squareMove12.isMoveRight = true;
+    }
+    public void GerakKiri()
+    {   
+        squareMove12.isMoveRight = false;
+    }
+    
 }
