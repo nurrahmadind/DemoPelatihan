@@ -2,6 +2,14 @@ using UnityEngine;
 using TMPro;
 public class Interaksi12 : MonoBehaviour
 {
+    public TMP_Text teksNyawa;
+    public int nyawa;
+    //deklarasi variable nyawa dengan tipe data int
+    //untuk menyimpan nilai nyawa
+    public BolaTabrak bolaTabrak;
+    //deklarasi variable bolaTabrak dengan tipe data class BolaTabrak
+    //ini digunakan untuk script ini bisa berkomunikasi dengan script BolaTabrak
+
     public SquareMove squareMove;
     //deklarasi variable squareMove dengan tipe data class SquareMove
     //ini digunakan untuk script ini bisa berkomunikasi dengan script SquareMove
@@ -14,7 +22,8 @@ public class Interaksi12 : MonoBehaviour
     //tambahkan referensi using TMPro; di bagian atas script
     void Start()
     {
-
+        
+        
     }
 
     // Update is called once per frame
@@ -44,4 +53,7 @@ public class Interaksi12 : MonoBehaviour
     {
         squareMove.arahGerak = ArahGerak.kiri;
     }
+
+
 }
+    

@@ -90,7 +90,6 @@ public class SquareMove : MonoBehaviour
 
 //deklarasi enum dengan nama ArahGerak  
 //yang berisi atas, bawah, kiri, kanan
-//
 public enum ArahGerak
 {
     atas,
