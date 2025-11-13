@@ -83,8 +83,8 @@ public class SquareMove : MonoBehaviour
         //di unity, pastikan object yang memiliki script SquareMove memiliki Rigidbody2D dan Collider2D
         //di unity masukan scrip Interaksi12 ke variable interaksi12 di inspector
         //agar script ini bisa mengakses variable di script Interaksi12
-        //di unity masukan script SquareMove ke object kotak yang ingin digerakkan
-        //dan pastikan object kotak memiliki tag "Dinding" pada object dinding
+        //di unity bagian kotak masukan script SquareMove ke object kotak yang ingin digerakkan
+        //dan pastikan object dinding memiliki tag "Dinding" pada object dinding
     }
 }
 
