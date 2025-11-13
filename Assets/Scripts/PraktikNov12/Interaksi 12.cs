@@ -2,10 +2,16 @@ using UnityEngine;
 using TMPro;
 public class Interaksi12 : MonoBehaviour
 {
-    public SquareMove squareMove; //kalo pak em SquareMove12B
+    public SquareMove squareMove;
+    //deklarasi variable squareMove dengan tipe data class SquareMove
+    //ini digunakan untuk script ini bisa berkomunikasi dengan script SquareMove
     public int skor;
+    //deklarasi variable skor dengan tipe data int
+    //untuk menyimpan nilai skor
     public TMP_Text teksSkor;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //deklarasi variable teksSkor dengan tipe data TMP_Text
+    //untuk menampilkan teks skor di layar
+    //tambahkan referensi using TMPro; di bagian atas script
     void Start()
     {
 
@@ -20,6 +26,9 @@ public class Interaksi12 : MonoBehaviour
     public void GerakAtas()
     {
         squareMove.arahGerak = ArahGerak.atas;
+        //mengubah arahGerak di script SquareMove menjadi ArahGerak.atas
+        //fungsi ini akan dipanggil saat tombol Atas ditekan
+        //fungsi ini dihubungkan di Unity melalui OnClick() kemudian pilih Interaksi12 -> GerakAtas
 
     }
 
