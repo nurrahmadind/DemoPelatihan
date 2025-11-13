@@ -17,8 +17,8 @@ public class SquareSpawner : MonoBehaviour
         while (sedangSpawn == true)
         {
             //Spawn Object
-            Instantiate (SpawnObject);
-            yield return new WaitForSeconds(5);
+            Instantiate (SpawnObject, new Vector3(Random.Range(-5,5), Random.Range(-5,5),0),Quaternion.identity);
+            yield return new WaitForSeconds(3);
         }
     }
 }
