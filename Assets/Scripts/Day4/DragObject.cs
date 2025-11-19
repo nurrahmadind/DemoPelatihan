@@ -12,15 +12,16 @@ public class DragObject : MonoBehaviour
     //     Debug.Log("Mouse Down");
     // }
    
-    // void OnMouseExit()
+    // void OnMouseExit() //ketika pointer keluar dari object
     // {
     //     Debug.Log("Mouse Exit");
     // }
 
      void OnMouseDrag()
     {
-        Vector2 worldMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = worldMousePosition;
+        Vector2 worldMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);// mengambil posisi mouse di world
+        transform.position = worldMousePosition; // mengubah posisi object sesuai dengan posisi mouse
+        
 
         //jika ingin dibatasi di dengan keadaan tertentu sb X
         // Vector2 worldMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -32,5 +33,6 @@ public class DragObject : MonoBehaviour
         //Vector2 worldMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         //squarePosition.x = Mathf.Clamp(squarePosition.x, -8, 8);
         //transform.position = squarePosition;
-    }
+     }
+    
 }

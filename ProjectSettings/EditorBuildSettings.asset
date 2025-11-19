@@ -12,8 +12,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Day3 UI.unity
     guid: 130550be607751e48a535552dedb68c7
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9bf656d6b04efa843b550d8a21974cd0
+  - enabled: 1
     path: Assets/Scenes/Day3 SceneBaru.unity
     guid: 506ef780be8d3e5429c2ec7fa3453ef7
+  - enabled: 1
+    path: Assets/Scenes/PlayerPrefs.unity
+    guid: 1f039532cda0c6447b7f00a0c9f4a362
+  - enabled: 1
+    path: Assets/Scenes/LatihanUjikom/Play.unity
+    guid: dcfd9a20bb1a3a14bbb3eff6ce15f018
+  - enabled: 1
+    path: Assets/Scenes/LatihanUjikom/Home.unity
+    guid: 22cf48c079b20f047b0cf294915f941f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
