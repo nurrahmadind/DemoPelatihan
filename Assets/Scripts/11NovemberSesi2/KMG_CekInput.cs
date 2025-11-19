@@ -6,7 +6,6 @@ public class KMG_CekInput : MonoBehaviour
     public GameObject _munculHilang;
 
     public GameObject _kotakBerwarna;
-
     public GameObject _untukSpawn;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,6 +38,8 @@ public class KMG_CekInput : MonoBehaviour
             Vector3 spawnPosition = new Vector3(2, 3, 2);
             Quaternion spawnRotation = Quaternion.Euler(0, 5, 0);
             Instantiate(_untukSpawn, spawnPosition, spawnRotation);
+            //spawanPosition dan spawnRotation untuk menentukan posisi dan rotasi objek spawn yang dihasilkan
+            //spawn berguna untuk membuat objek baru
 
             // Instantiate(_untukSpawn, new Vector3 (Random.Range (-5,5), Random.Range (-5,5),0), Quaternion.Euler(0,0,0));
             //vector dan Quaternion untuk menentukan posisi dan rotasi objek spawn yang dihasilkan
@@ -48,7 +49,7 @@ public class KMG_CekInput : MonoBehaviour
         {
             GameObject hancurkan = GameObject.Find("SpawnCapsule(Clone)");
             Debug.Log("Tombol M ditekan,Object hancur");
-            // Destroy(_targetHancur); //untukmenghilangkat targethancur
+            // Destroy(_targetHancur); //untukmenghilangkan targethancur
             Destroy(hancurkan);
 
         }

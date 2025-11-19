@@ -21,7 +21,7 @@ public class PendeteksiInput : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            inputEvent?.Invoke();
+            inputEvent?.Invoke(); 
         }
         if (Input.GetKeyDown(KeyCode.Return))
         {

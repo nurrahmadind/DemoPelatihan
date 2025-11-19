@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 
 
-public class timer : MonoBehaviour
+public class wkt : MonoBehaviour
 {
     public DeteksiObjek deteksiObjek;
     public float waktu;//menyimpan waktu
@@ -12,6 +12,7 @@ public class timer : MonoBehaviour
 
     public bool WaktuBerjalan=true;
     
+    public AudioSource TimerAlert;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,7 +23,7 @@ public class timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if (waktu <= 0)
+         if (waktu >=10)
         {
             WaktuBerjalan = false; 
             Application.Quit();
@@ -36,9 +37,14 @@ public class timer : MonoBehaviour
     {
         while (WaktuBerjalan == true)
         {
-            waktu = waktu - 1;
+            waktu = waktu + 1;
+            if (waktu >= 5)
+            {
+                Debug.Log("Timer Alert");
+                TimerAlert.Play();
+            }
             textTimer.text = waktu.ToString();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(1);//untuk delay tiap satu detik waktu bertambah satu       
         }
 
     }

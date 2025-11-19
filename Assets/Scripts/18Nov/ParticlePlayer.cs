@@ -7,7 +7,7 @@ public class ParticlePlayer : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) //ini untuk mengaktifkan particle
     
              {
         particle.Play();

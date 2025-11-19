@@ -25,7 +25,7 @@ public class KotakGerak : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)//oncollisionenter2d untuk menangkap objek yang tabrakan
     {
         Debug.Log("Kotak tabrakan");
         if (isMoveRight)

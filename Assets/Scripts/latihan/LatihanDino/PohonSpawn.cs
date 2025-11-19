@@ -1,9 +1,10 @@
 using System.Collections;
 using UnityEngine;
 
-public class SquareSpawner : MonoBehaviour
+public class PohonSpawnScript : MonoBehaviour
 {
-    public GameObject SpawnObject;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+public GameObject PohonSpawn;//apapun yang spawn harus jadi prefabs
     public bool sedangSpawn = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -14,6 +15,8 @@ public class SquareSpawner : MonoBehaviour
 
     IEnumerator MunculkanObject () //ienumerator untuk membuat fungsi yang dapat dijalankan secara berurutan
     //munculobject sebagai fungsi yang dapat dijalankan secara berurutan
+    //Ienumerator dipakai ketika menggunakan coroutine
+    //coroutine juga harus menggunakan yield
     {
         while (sedangSpawn == true)
         //fungsi ini digunakan jika sedangSpawn bernilai true
@@ -22,7 +25,7 @@ public class SquareSpawner : MonoBehaviour
         
         {
             //Spawn Object
-            Instantiate (SpawnObject, new Vector3(Random.Range(-5,5), Random.Range(-5,5),0),Quaternion.identity);
+            Instantiate (PohonSpawn, new Vector3(7, -3.5f,0),Quaternion.identity); //mengatur kecepatan object
             //fungsi ini berguna untuk membuat object yang ada di variabel SpawnObject
             //new Vector3(Random.Range(-5,5), Random.Range(-5,5),0) berguna untuk membuat object tersebut muncul secara random di koordinat x dan y
             //Quaternion.identity berguna untuk membuat object tersebut memiliki orientasi yang sama dengan object yang membuatnya
@@ -31,3 +34,4 @@ public class SquareSpawner : MonoBehaviour
         }
     }
 }
+

@@ -30,9 +30,9 @@ public class DeteksiObjek : MonoBehaviour
             if(lingkarandiklik != null)
             {
                 if(lingkarandiklik.CompareTag("Bola"))
-                {Destroy(lingkarandiklik.gameObject);
+                {Destroy(lingkarandiklik.gameObject); //jika lingkarandiklik memiliki tag "Bola", maka objek tersebut akan dihapus
                 Debug.Log("Objek dihapus");
-                tambahSkor();
+                tambahSkor();//menjalankan fungsi tambahSkor
                 }
                 
             }

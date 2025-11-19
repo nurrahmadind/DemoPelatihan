@@ -8,7 +8,9 @@ public class ContohCourotine : MonoBehaviour
     {
         StartCoroutine (CobaCourotine());
     }
-
+    //Coroutine adalah function yang bisa dijalankan secara berurutan
+    //Coroutine menggunakan IEnumerator
+    //COroutine digunakan untuk membuat delay
     // Update is called once per frame
     void Update()
     {
@@ -19,7 +21,7 @@ public class ContohCourotine : MonoBehaviour
     IEnumerator CobaCourotine()
     {
         Debug.Log("Perintah 1");
-        yield return new WaitForSeconds (5);
+        yield return new WaitForSeconds (5); //tunda selama 5 detik
         Debug.Log ("Perintah 2");
     }
 }

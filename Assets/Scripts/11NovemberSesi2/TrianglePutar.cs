@@ -12,5 +12,6 @@ public class TrianglePutar : MonoBehaviour
     void Update()
     {
         gameObject .transform.Rotate (0,0,50*Time.deltaTime); //untuk memutar objek
+        //0,0,50 adalah nilai rotasi
     }
 }

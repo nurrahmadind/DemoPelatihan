@@ -9,6 +9,7 @@ TagManager:
   - Dinding
   - Square
   - Lantai
+  - Pohon
   layers:
   - Default
   - TransparentFX
