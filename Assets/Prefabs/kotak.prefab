@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7156666293182154123}
   - component: {fileID: 1899482670880283302}
+  - component: {fileID: -6955406090475086836}
   m_Layer: 0
   m_Name: kotak
   m_TagString: Untagged
@@ -87,3 +88,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-6955406090475086836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283468479603571797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 976e9d5c3110bbc4d978c6d4bbb6be3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
